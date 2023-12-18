@@ -1,0 +1,14 @@
+mainClassName = 'subproject.App'
+java {
+    sourceCompatibility = '1.8'
+}
+
+dependencies {
+    implementation project(":subproject-2")
+}
+
+// Custom run task
+task runApp(type: JavaExec) {
+    mainClass = mainClassName
+    classpath = sourceSets.main.runtimeClasspath + sourceSets.main.output
+}
