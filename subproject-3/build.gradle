@@ -1,7 +1,4 @@
 mainClassName = 'subproject.App'
-java {
-    sourceCompatibility = '1.8'
-}
 
 dependencies {
     implementation project(":subproject-2")
