@@ -1,3 +1,14 @@
 dependencies {
     //implementation project(":subproject-1")
 }
+
+plugins {
+  id "org.sonarqube" version "5.0.0.4638"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "imayou123_monorepo-gradle2_project2"
+    property "sonar.projectName", "imayou123_monorepo-gradle2_project2"
+  }
+}
